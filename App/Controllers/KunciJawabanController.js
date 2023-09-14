@@ -51,7 +51,7 @@ class KunciJawabanController {
                if (!err.code) {
                     err.code = 500
                }
-               await Debug.logging(err.code, err.message, req.body.email, err.req);
+               await Debug.logging(err.code, err.message, null, err.req);
                return res.status(err.code).json({
                     status: false,
                     message: err.message
@@ -85,7 +85,7 @@ class KunciJawabanController {
                if (!err.code) {
                     err.code = 500
                }
-               await Debug.logging(err.code, err.message, req.body.email, err.req);
+               await Debug.logging(err.code, err.message, null, err.req);
                return res.status(err.code).json({
                     status: false,
                     message: err.message

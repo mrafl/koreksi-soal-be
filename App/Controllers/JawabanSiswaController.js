@@ -58,7 +58,7 @@ class JawabanSiswaController {
                if (!err.code) {
                     err.code = 500
                }
-               await Debug.logging(err.code, err.message, req.body.email, err.req);
+               await Debug.logging(err.code, err.message, null, err.req);
                return res.status(err.code).json({
                     status: false,
                     message: err.message
@@ -93,7 +93,7 @@ class JawabanSiswaController {
                if (!err.code) {
                     err.code = 500
                }
-               await Debug.logging(err.code, err.message, req.body.email, err.req);
+               await Debug.logging(err.code, err.message, null, err.req);
                return res.status(err.code).json({
                     status: false,
                     message: err.message
@@ -151,7 +151,7 @@ class JawabanSiswaController {
                          point,
                          nilai: (point / totalSoal) * 100,
                     }
-                    
+
                } else {
                     result = await JawabanSiswa.find().populate('idKunciJawaban');
 
@@ -209,7 +209,7 @@ class JawabanSiswaController {
                if (!err.code) {
                     err.code = 500
                }
-               await Debug.logging(err.code, err.message, req.body.email, err.req);
+               await Debug.logging(err.code, err.message, null, err.req);
                return res.status(err.code).json({
                     status: false,
                     message: err.message
