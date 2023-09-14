@@ -1,0 +1,10 @@
+{"code":500,"message":"TOKEN_EXPIRED","username":null,"method":"GET","url":"/nilai","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-07 07:13:40"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-07 07:13:49"}
+{"code":400,"message":"Kunci Jawaban Sudah Ada!","username":null,"method":"POST","url":"/kunci-jawaban","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-07 07:21:40"}
+{"code":500,"message":"Assignment to constant variable.","username":null,"date":"2023-09-07 07:30:45"}
+{"code":409,"message":"Username Sudah Terdaftar!","username":"rafli@gmail.com","method":"POST","url":"/auth/register","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-07 08:14:14"}
+{"code":200,"message":"Berhasil Mendaftarkan Akun!","username":"rafli@gmail.com","method":"POST","url":"/auth/register","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-07 08:14:27"}
+{"code":404,"message":"User tidak ditemukan!","username":"rafli","method":"POST","url":"/auth/login","browser":"GuzzleHttp/7","ip":"::ffff:127.0.0.1","date":"2023-09-07 08:14:36"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"GuzzleHttp/7","ip":"::ffff:127.0.0.1","date":"2023-09-07 08:14:45"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"GuzzleHttp/7","ip":"::ffff:127.0.0.1","date":"2023-09-07 08:15:05"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"GuzzleHttp/7","ip":"::ffff:127.0.0.1","date":"2023-09-07 08:17:27"}

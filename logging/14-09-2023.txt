@@ -1,0 +1,18 @@
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"GuzzleHttp/7","ip":"::ffff:127.0.0.1","date":"2023-09-14 10:22:12"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-14 10:22:53"}
+{"code":500,"message":"TOKEN_REQUIRED","username":null,"method":"GET","url":"/kunci-jawaban","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-14 10:25:17"}
+{"code":500,"message":"TOKEN_REQUIRED","username":null,"method":"GET","url":"/kunci-jawaban","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-14 10:25:30"}
+{"code":400,"message":"Kode Soal Harus di Isi!","username":null,"method":"POST","url":"/kunci-jawaban","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-14 12:56:39"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:41:59"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:43:21"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:48:40"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:50:00"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:50:52"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:58:51"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 13:59:35"}
+{"code":400,"message":"Kunci Jawaban Tidak Ditemukan!","username":null,"method":"GET","url":"/kunci-jawaban?id=6502af2a61c21c4abfaea589","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-14 13:59:37"}
+{"code":400,"message":"Kunci Jawaban Tidak Ditemukan!","username":null,"method":"GET","url":"/kunci-jawaban?id=6502af5661c21c4abfaea597","browser":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36","ip":"::1","date":"2023-09-14 14:01:48"}
+{"code":500,"message":"result is not iterable","username":null,"date":"2023-09-14 14:22:19"}
+{"code":500,"message":"item is not defined","username":null,"date":"2023-09-14 14:24:38"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 14:42:24"}
+{"code":500,"message":"Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"KunciJawaban\"","username":null,"date":"2023-09-14 14:46:10"}

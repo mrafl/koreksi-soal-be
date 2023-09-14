@@ -1,0 +1,21 @@
+{"code":428,"message":"Username atau Email tidak boleh kosong!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:23:21"}
+{"code":404,"message":"User tidak ditemukan!","username":"rafli.unj@gmail.com","method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:23:36"}
+{"code":428,"message":"Username minimal 6 karakter!","username":"rafli.unj@gmail.com","method":"POST","url":"/auth/register","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:25:23"}
+{"code":200,"message":"Berhasil Mendaftarkan Akun!","username":"rafli.unj@gmail.com","method":"POST","url":"/auth/register","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:25:30"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:25:44"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:26:01"}
+{"code":500,"message":"TOKEN_REQUIRED","username":null,"method":"POST","url":"/kunci-jawaban","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:44:20"}
+{"code":403,"message":"Forbidden: Access is denied","username":null,"method":"POST","url":"/kunci-jawaban","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:44:30"}
+{"code":200,"message":"Berhasil Mendaftarkan Akun!","username":"rafli.unj@gmail.com","method":"POST","url":"/auth/register","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:45:27"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:45:30"}
+{"code":200,"message":"Berhasil Login!","username":null,"method":"POST","url":"/auth/login","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:45:56"}
+{"code":400,"message":"Kunci Jawaban Sudah Ada!","username":null,"method":"POST","url":"/kunci-jawaban","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 18:49:04"}
+{"code":500,"message":"KunciJawaban validation failed: tipeSoal: `correctScoree` is not a valid enum value for path `tipeSoal`.","username":null,"date":"2023-09-06 18:49:09"}
+{"code":400,"message":"Jawaban Siswa Harus di Isi!","username":null,"method":"POST","url":"/jawaban-siswa","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 19:17:14"}
+{"code":500,"message":"JawabanSiswa validation failed: jawabanSiswa.0.jawaban: Path `jawaban` is required., jawabanSiswa.1.jawaban: Path `jawaban` is required., jawabanSiswa.2.jawaban: Path `jawaban` is required., jawabanSiswa.3.jawaban: Path `jawaban` is required., jawabanSiswa.4.jawaban: Path `jawaban` is required.","username":null,"date":"2023-09-06 19:17:30"}
+{"code":500,"message":"JawabanSiswa is not defined","username":null,"date":"2023-09-06 19:31:10"}
+{"code":500,"message":"getJawabanSiswa is not iterable","username":null,"date":"2023-09-06 19:33:19"}
+{"code":500,"message":"Assignment to constant variable.","username":null,"date":"2023-09-06 19:42:25"}
+{"code":500,"message":"JawabanSiswa validation failed: jawabanSiswa.0.jawaban: Path `jawaban` is required., jawabanSiswa.2.jawaban: Path `jawaban` is required.","username":null,"date":"2023-09-06 19:52:46"}
+{"code":500,"message":"benar is not defined","username":null,"date":"2023-09-06 19:54:12"}
+{"code":400,"message":"Kunci Jawaban Sudah Ada!","username":null,"method":"POST","url":"/kunci-jawaban","browser":"PostmanRuntime/7.32.3","ip":"::1","date":"2023-09-06 19:58:53"}
