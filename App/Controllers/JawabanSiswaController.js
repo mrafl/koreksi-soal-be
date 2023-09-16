@@ -73,9 +73,9 @@ class JawabanSiswaController {
                if (req.query.id) {
                     data = await JawabanSiswa.findOne({
                          _id: req.query.id
-                    }).populate('idKunciJawaban', 'kodeSoal tipeSoal kunciJawaban')
+                    }).populate('idKunciJawaban', 'kodeSoal kunciJawaban')
                } else {
-                    data = await JawabanSiswa.find().populate('idKunciJawaban', 'kodeSoal tipeSoal kunciJawaban');
+                    data = await JawabanSiswa.find().populate('idKunciJawaban', 'kodeSoal kunciJawaban');
                }
 
                if (!data) throw {
@@ -130,26 +130,25 @@ class JawabanSiswaController {
                          }
                     }
 
-                    let point = 0;
+                    const punishmentScore = {
+                         point: (benar.length * 1) - (salah.length * 0.25),
+                         nilai: ((benar.length * 1) - (salah.length * 0.25)) / result.idKunciJawaban.kunciJawaban.length * 100
+                    }
 
-                    if (result.idKunciJawaban.tipeSoal == 'punishmentScore') {
-                         point = (benar.length * 1) - (salah.length * 0.25);
-                    } else {
-                         point = benar.length;
+                    const correctScore = {
+                         point: benar.length,
+                         nilai: benar.length / result.idKunciJawaban.kunciJawaban.length * 100
                     }
                     
-                    const totalSoal = result.idKunciJawaban.kunciJawaban.length;
-
                     data = {
                          _id: result._id,
                          namaSiswa: result.namaSiswa,
-                         tipeSoal: result.idKunciJawaban.tipeSoal,
                          kodeSoal: result.idKunciJawaban.kodeSoal,
                          benar: benar.length,
                          salah: salah.length,
                          tidakDiisi: tidakDiisi.length,
-                         point,
-                         nilai: (point / totalSoal) * 100,
+                         punishmentScore,
+                         correctScore
                     }
 
                } else {
@@ -175,26 +174,26 @@ class JawabanSiswaController {
                               }
                          }
 
-                         let point = 0;
-                         if (item.idKunciJawaban.tipeSoal == 'punishmentScore') {
-                              point = (benar.length * 1) - (salah.length * 0.25);
-                         } else {
-                              point = benar.length;
+                         const punishmentScore = {
+                              point: (benar.length * 1) - (salah.length * 0.25),
+                              nilai: ((benar.length * 1) - (salah.length * 0.25)) / result.idKunciJawaban.kunciJawaban.length * 100
+                         }
+     
+                         const correctScore = {
+                              point: benar.length,
+                              nilai: benar.length / result.idKunciJawaban.kunciJawaban.length * 100
                          }
 
-                         const totalSoal = item.idKunciJawaban.kunciJawaban.length;
-
-                         data.push({
-                              _id: item._id,
-                              namaSiswa: item.namaSiswa,
-                              tipeSoal: item.idKunciJawaban.tipeSoal,
-                              kodeSoal: item.idKunciJawaban.kodeSoal,
+                         data = {
+                              _id: result._id,
+                              namaSiswa: result.namaSiswa,
+                              kodeSoal: result.idKunciJawaban.kodeSoal,
                               benar: benar.length,
                               salah: salah.length,
                               tidakDiisi: tidakDiisi.length,
-                              point,
-                              nilai: (point / totalSoal) * 100,
-                         });
+                              punishmentScore,
+                              correctScore
+                         }
                     }
                }
 

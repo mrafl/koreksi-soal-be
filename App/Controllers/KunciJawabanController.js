@@ -12,11 +12,6 @@ class KunciJawabanController {
                     message: 'Kode Soal Harus di Isi!',
                     req
                }
-               if (!req.body.tipeSoal) throw {
-                    code: 400,
-                    message: 'Tipe Soal Harus di Isi!',
-                    req
-               }
                if (!req.body.kunciJawaban) throw {
                     code: 400,
                     message: 'Kunci Jawaban Harus di Isi!',
@@ -35,7 +30,6 @@ class KunciJawabanController {
 
                const newKunciJawaban = new KunciJawaban({
                     kodeSoal: req.body.kodeSoal,
-                    tipeSoal: req.body.tipeSoal,
                     kunciJawaban: req.body.kunciJawaban,
                });
 

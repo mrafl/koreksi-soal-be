@@ -19,11 +19,6 @@ const Schema = mongoose.Schema({
           type: String,
           required: true,
      },
-     tipeSoal: {
-          type: String,
-          enum: ['correctScore', 'punishmentScore'],
-          required: true,
-     },
      kunciJawaban: [kunciJawabanSchema], // Gunakan subskema kunciJawaban di sini
 });
 
