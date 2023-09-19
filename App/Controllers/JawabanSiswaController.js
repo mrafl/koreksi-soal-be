@@ -130,9 +130,16 @@ class JawabanSiswaController {
                          }
                     }
 
+                    const jumlahOpsi = 5;
+
                     const punishmentScore = {
-                         point: (benar.length * 1) - (salah.length * 0.25),
-                         nilai: ((benar.length * 1) - (salah.length * 0.25)) / result.idKunciJawaban.kunciJawaban.length * 100
+                         point: parseFloat((( benar.length ) - (salah.length * ( 1 / ( jumlahOpsi - 1 )))).toFixed(2)),
+                         nilai: parseFloat(((( benar.length ) - (salah.length * ( 1 / ( jumlahOpsi - 1 )))) / result.idKunciJawaban.kunciJawaban.length * 100).toFixed(2))
+                    }
+
+                    const rewardScore = {
+                         point: parseFloat((( benar.length ) + (tidakDiisi.length * ( 1 / jumlahOpsi ))).toFixed(2)),
+                         nilai: parseFloat(((( benar.length ) + (tidakDiisi.length * ( 1 / jumlahOpsi ))) / result.idKunciJawaban.kunciJawaban.length * 100).toFixed(2))
                     }
 
                     const correctScore = {
@@ -144,10 +151,13 @@ class JawabanSiswaController {
                          _id: result._id,
                          namaSiswa: result.namaSiswa,
                          kodeSoal: result.idKunciJawaban.kodeSoal,
+                         jumlahSoal: result.idKunciJawaban.kunciJawaban.length,
+                         jumlahOpsi,
                          benar: benar.length,
                          salah: salah.length,
                          tidakDiisi: tidakDiisi.length,
                          punishmentScore,
+                         rewardScore,
                          correctScore
                     }
 
@@ -174,30 +184,38 @@ class JawabanSiswaController {
                               }
                          }
 
+                         const jumlahOpsi = 5;
+
                          const punishmentScore = {
-                              point: (benar.length * 1) - (salah.length * 0.25),
-                              nilai: ((benar.length * 1) - (salah.length * 0.25)) / result.idKunciJawaban.kunciJawaban.length * 100
+                              point: parseFloat((( benar.length ) - (salah.length * ( 1 / ( jumlahOpsi - 1 )))).toFixed(2)),
+                              nilai: parseFloat(((( benar.length ) - (salah.length * ( 1 / ( jumlahOpsi - 1 )))) / item.idKunciJawaban.kunciJawaban.length * 100).toFixed(2))
+                         }
+     
+                         const rewardScore = {
+                              point: parseFloat((( benar.length ) + (tidakDiisi.length * ( 1 / jumlahOpsi ))).toFixed(2)),
+                              nilai: parseFloat(((( benar.length ) + (tidakDiisi.length * ( 1 / jumlahOpsi ))) / item.idKunciJawaban.kunciJawaban.length * 100).toFixed(2))
                          }
      
                          const correctScore = {
                               point: benar.length,
-                              nilai: benar.length / result.idKunciJawaban.kunciJawaban.length * 100
+                              nilai: benar.length / item.idKunciJawaban.kunciJawaban.length * 100
                          }
 
-                         data = {
-                              _id: result._id,
-                              namaSiswa: result.namaSiswa,
-                              kodeSoal: result.idKunciJawaban.kodeSoal,
+                         data.push({
+                              _id: item._id,
+                              namaSiswa: item.namaSiswa,
+                              kodeSoal: item.idKunciJawaban.kodeSoal,
+                              jumlahSoal: item.idKunciJawaban.kunciJawaban.length,
+                              jumlahOpsi,
                               benar: benar.length,
                               salah: salah.length,
                               tidakDiisi: tidakDiisi.length,
                               punishmentScore,
+                              rewardScore,
                               correctScore
-                         }
+                         })
                     }
                }
-
-
 
                return res.status(200).json({
                     status: true,
